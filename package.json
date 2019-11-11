@@ -4,24 +4,35 @@
   "description": "Gulp boilerplate with browserify and sass",
   "main": "main.js",
   "scripts": {
-    "start": "gulp"
+    "start": "yarn build:all && gulp",
+    "clean": "rimraf dist",
+    "build:js": "gulp babel",
+    "build:css": "gulp sass",
+    "build:html": "gulp pug",
+    "build:all": "yarn clean && yarn build:js && yarn build:css && yarn build:html"
   },
   "author": "Jesper Orb",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.1.6",
+    "@babel/preset-env": "^7.7.1",
     "autoprefixer": "^9.3.1",
     "babel-preset-env": "^1.2.0",
     "babelify": "^10.0.0",
     "browser-sync": "^2.18.8",
     "browserify": "^16.2.3",
     "cssnano": "^4.1.7",
-    "gulp": "^3.9.1",
+    "gulp": "4",
     "gulp-babel": "^8.0.0",
     "gulp-postcss": "^8.0.0",
+    "gulp-pug": "^4.0.1",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^4.0.2",
     "gulp-util": "^3.0.8",
+    "jquery": "^3.4.1",
+    "postcss-css-variables": "^0.13.0",
+    "postcss-csso": "^4.0.0",
+    "rimraf": "^3.0.0",
     "vinyl-source-stream": "^2.0.0"
   }
 }

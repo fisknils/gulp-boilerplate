@@ -1,0 +1,16 @@
+
+/// Copy text color
+/// @type Color
+$text-color: rgb(255, 255, 255) !default;
+
+/// Main brand color
+/// @type Color
+$brand-color: hsla(359, 59%, 54%, 1.0) !default;
+
+/// Darker brand color
+/// @type Color
+$mid-brand-color: hsla(359, 59%, 33%, 1.0) !default;
+
+/// Main text font
+/// @type Font
+$text-font: 100%/1.5 'Source Sans Pro', sans-serif !default;
