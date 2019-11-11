@@ -4,12 +4,11 @@
   "description": "Gulp boilerplate with browserify and sass",
   "main": "main.js",
   "scripts": {
-    "start": "yarn build:all && gulp",
+    "start": "rimraf dist && gulp babel && gulp pug && gulp sass && gulp",
     "clean": "rimraf dist",
     "build:js": "rimraf dist/js && gulp babel",
     "build:css": "rimraf dist/css && gulp sass",
-    "build:html": "rimraf dist/partials && rimraf dist/index.html && gulp pug",
-    "build:all": "rimraf dist && gulp babel && gulp sass && gulp pug"
+    "build:html": "rimraf dist/index.html dist/partials && gulp pug"
   },
   "author": "Jesper Orb",
   "license": "ISC",

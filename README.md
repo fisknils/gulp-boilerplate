@@ -8,12 +8,16 @@
 
 ```bash
 # Uses package.json "devDependencies" to install dependencies
+npm install
+or
 yarn
 ```
 
 * Start `gulp` by running:
 
 ```bash
+npm start
+or
 yarn start
 ```
 
