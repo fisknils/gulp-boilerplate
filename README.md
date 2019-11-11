@@ -8,13 +8,13 @@
 
 ```bash
 # Uses package.json "devDependencies" to install dependencies
-npm install
+yarn
 ```
 
 * Start `gulp` by running:
 
 ```bash
-npm start
+yarn start
 ```
 
 * Write code in the `src`-folder.
@@ -33,7 +33,6 @@ npm start
     - `pug` - Should only hold `index.pug` and `partials`.
     - `pug/partials` - All uncoverted `pug partials`.
 * `Gulpfile.js` - This config file must be in the root-folder
-* `index.html` - The index must be in the root-folder
 * `package.json` - All the dependencies and config for the project
 
 
